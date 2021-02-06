@@ -1,16 +1,31 @@
 import React, {Component} from 'react';
-import logo from './logo.svg';
 import './App.css';
-import {Greet} from './components/Greet';
 
-class App extends Component {
+class Status extends Component{
+  render(){
+    return (
+      <div className="status">
+        <p>Wow, I had the most delicious lunch tody.</p>
+        <p><button>Like</button></p>
+      </div>
+    )
+  }
+}
+class App extends Component{
   render(){
     return(
       <div className="App">
-      <Greet />
+        <header className="App-header">
+          <Status />
+          <Status />
+          <Status />
+          <Status />
+        </header>
       </div>
     )
   }
 }
 
 export default App;
+
+
