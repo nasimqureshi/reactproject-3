@@ -5,7 +5,7 @@ class Status extends Component{
   render(){
     return (
       <div className="status">
-        <p>Wow, I had the most delicious lunch tody.</p>
+        <p>{this.props.mytext}</p>
         <p><button>Like</button></p>
       </div>
     )
@@ -16,10 +16,10 @@ class App extends Component{
     return(
       <div className="App">
         <header className="App-header">
-          <Status />
-          <Status />
-          <Status />
-          <Status />
+          <Status mytext="Wow, I had the most delicious lunch today" />
+          <Status mytext="There was a lot of traffic today" />
+          <Status mytext="Finally I finished the big project" />
+          <Status mytext="Happy to be learning ReactJS" />
         </header>
       </div>
     )
